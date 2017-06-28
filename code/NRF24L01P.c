@@ -96,7 +96,7 @@ void config_nrf24(){
 
    //RF_CH - define o canal do modulo (TX e RX devem ser iguais)
    output_low(CSN);
-   spi_write(0x05);
+   spi_write(0x25);
    spi_write(CANAL);
    output_high(CSN);
 
